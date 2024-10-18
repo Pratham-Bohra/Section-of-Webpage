@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body class="flex justify-center mt-32 h-screen w-full" style="background: linear-gradient(155deg, #140152 50%, #f8f9fa 50%);">
+    <div id="assignment">
+        <div class="content">
+            <div class="header w-[94.5%] h-12 text-white pt-4 pl-10 font-abel font-light">
+                <h1 class="text-6xl font-bold">OUR SERVICE</h1>
+            </div>
+
+            <div class="blocks flex justify-center items-center w-full h-[290px] gap-4 mt-20">
+               
+
+                <div class="btn flex flex-col justify-center items-center shadow-lg h-[230px] w-[23%] bg-white container" id="oddmanout">
+                    <div class="flex flex-col justify-center items-center gap-4 pb-14">
+                        <img src="Emergency_Plumbing_Services.png" class="w-16 h-16 border-4 border-[#140152] rounded-full">
+                        <h3 class="font-bold text-center">Emergency Plumbing Services</h3>
+                        <p class="text-center">Our Plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+                        <a href="#" class="no-underline text-indigo-900 font-bold">EXPLORE THIS SERVICE ></a>
+                    </div>
+                </div>
+                
+
+                <div class="btn flex flex-col justify-center items-center shadow-lg h-[230px] w-[23%] bg-white container">
+                    <div class="flex flex-col justify-center items-center gap-4 pb-14">
+                        <img src="Plumbing_and_Drains.png" class="w-16 h-16 border-4 border-[#140152] rounded-full">
+                        <h3 class="font-bold text-center">Plumbing and Drains</h3>
+                        <p class="text-center">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                        <a href="#" class="no-underline text-indigo-900 font-bold">EXPLORE THIS SERVICE ></a>
+                    </div>
+                </div>
+
+                <div class="btn flex flex-col justify-center items-center shadow-lg h-[230px] w-[23%] bg-white container" id="oddmanout2">
+                    <div class="flex flex-col justify-center items-center gap-4 pb-20">
+                        <img src="Water_damage.png" class="w-16 h-16 border-4 border-[#140152] rounded-full">
+                        <h3 class="font-bold text-center">Water Damage</h3>
+                        <p class="text-center">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                        <a href="#" class="no-underline text-indigo-900 font-bold">EXPLORE THIS SERVICE ></a>
+                    </div>
+                </div>
+
+                <div class="btn flex flex-col justify-center items-center shadow-lg h-[230px] w-[23%] bg-white container">
+                    <div class="flex flex-col justify-center items-center gap-4 pb-20">
+                        <img src="Water_Heater.png" class="w-16 h-16 border-4 border-[#140152] rounded-full">
+                        <h3 class="font-bold text-center">Water Heaters</h3>
+                        <p class="text-center">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+                        <a href="#" class="no-underline text-indigo-900 font-bold">EXPLORE THIS SERVICE ></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const boxes = document.querySelectorAll('.btn');
+    
+        
+        boxes.forEach(box => {
+          box.addEventListener('mouseenter', () => {
+        
+            anime.set(box, { rotate: 0 });
+    
+        
+            anime({
+              targets: box,
+              rotate: '1turn', 
+              duration: 1000, 
+              easing: 'easeInOutQuad'
+            });
+          });
+        });
+      </script>
+</body>
+</html>
